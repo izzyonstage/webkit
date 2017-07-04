@@ -75,10 +75,6 @@ if (${PORT} STREQUAL "Qt")
         )
     endif ()
 
-    if (QT_STATIC_BUILD)
-        target_link_libraries(WebKit PUBLIC ${ZLIB_LIBRARIES})
-    endif ()
-
     if (ENABLE_WEBKIT2)
         add_dependencies(WebKit WebKit2)
     endif ()
